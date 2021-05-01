@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".AddContactActivity">
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        tools:srcCompat="@drawable/pakistan" />
+
+    <TextView
+        android:id="@+id/etxtContactDetails"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:text="Add Contact"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etxtContact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:hint="Contact"
+        android:drawableLeft="@android:drawable/sym_action_call"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/etxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:hint="Email"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/etxtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:hint="Address"
+        android:drawableLeft="@android:drawable/ic_menu_mapmode"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/etxtDoB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:hint="Date of Birth"
+        android:drawableLeft="@android:drawable/presence_invisible"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--            android:id="@+id/fab"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="end|bottom"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="20dp"-->
+        <!--            android:contentDescription="@string/submit"-->
+        <!--            android:src="@android:drawable/ic_input_add" />-->
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="80dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/button"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:gravity="center_horizontal"-->
+        <!--            android:text="Button" />-->
+    </LinearLayout>
+
+</LinearLayout>
